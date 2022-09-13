@@ -21,11 +21,23 @@ REACT LARAVEL DOCKER
     const mix = require('laravel-mix');
     mix.js('resources/js/app.js','public/js').react();
 - npm install --save-dev @babel/preset-react
--  npm install popper.js --save
+- npm install popper.js --save
 - npm install
 - add to "scripts" in package.json
     "watch" : "mix watch"
 - npm run watch (2 times)
+
+# add fontawesome for create icon
+```shell
+npm i --save @fortawesome/react-fontawesome@latest
+#Get Started
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+```
+#download fontawesome
+- https://fontawesome.com/docs/web/setup/host-yourself/webfonts
+- https://fontawesome.com/download
+- put directory of fontawesome in public and add all.css in header
 
 
 

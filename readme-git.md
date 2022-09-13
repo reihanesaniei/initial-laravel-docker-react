@@ -11,7 +11,7 @@ git branch -M develop
 git remote add develop https://github.com/reihanesaniei/guide
 git push --set-upstream develop develop
 git push --set-upstream origin main
-
+git push -u origin main
 git checkout -b develope
 git merge main
 git push -u develope master

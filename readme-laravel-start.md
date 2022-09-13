@@ -25,6 +25,7 @@ npm install --save-dev @vitejs/plugin-vue
 npm run build
 
 ---
+#FIRST METHOD EXECUTE REACT
 #install vite for frontend react in laravel
 Vite is a modern frontend build tool that provides an extremely fast development environment and bundles your code for production.
 
@@ -54,3 +55,21 @@ npm i @vitejs/plugin-react-refresh --force
 
 npm install source-map-support
 ```
+---
+#SECOND METHOD EXECUTE REACT
+- docker-compose run --rm composer require laravel/ui
+- docker-compose run --rm artisan ui react --auth
+- use laravel mix
+```php
+npm install laravel-mix --save-dev
+touch webpack.mix.js
+// webpack.mix.js
+const mix = require('laravel-mix');
+mix.js('resources/js/app.js','public/js').react() ;
+//then execute 
+npx mix or npm run watch
+```
+- add watch to package.json
+
+- npm install browser-sync browser-sync-webpack-plugin@^2.3.0 --save-dev --legacy-peer-deps
+- npm run watch
